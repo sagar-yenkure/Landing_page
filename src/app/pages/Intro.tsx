@@ -49,7 +49,7 @@ const Intro = () => {
                 <Image src={line} alt="enimate line" width={400} />
               </div>
               <p className="text-black font-bold text-sm md:py-8 p-4 md:p-8 md:px-10">
-                Let's make your work more organized and easier using the Taskio
+                Lets make your work more organized and easier using the Taskio
                 Dashboard with many of the latest features in managing work
                 every day.
               </p>
