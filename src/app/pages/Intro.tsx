@@ -43,7 +43,7 @@ const Intro = () => {
           <div className="heading_text_ w-full md:w-1/2 flex justify-center md:p-8">
             <div>
               <h1 className="p-4 md:p-8 text-4xl md:text-6xl font-bold ">
-                We're here to Increase your Productivity
+                We are here to Increase your Productivity
               </h1>
               <div className="md:w-full flex pl-6 w-[20rem]">
                 <Image src={line} alt="enimate line" width={400} />
