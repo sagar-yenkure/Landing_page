@@ -4,7 +4,7 @@ import green_tick from "../../../public/Assests/svg/green_tick.svg";
 
 const Plan_section = () => {
   interface feat {
-    id: Number;
+    id:any;
     title: string;
   }
 
@@ -63,7 +63,7 @@ const Plan_section = () => {
             <span className="plan__info bg-[#F9FAFB] flex-col space-y-8 p-3 px-12 rounded-xl justify-center items-center">
               {free_feat.map((f) => {
                 return (
-                  <span className="flex space-x-2 ">
+                  <span key={f.id} className="flex space-x-2 ">
                     <Image src={green_tick} alt="greentick" width={20} />
                     <h6>{f.title}</h6>
                   </span>
@@ -95,7 +95,7 @@ const Plan_section = () => {
             >
               {pro_feat.map((f) => {
                 return (
-                  <span className="flex space-x-2 ">
+                  <span key={f.id} className="flex space-x-2 ">
                     <Image src={green_tick} alt="greentick" width={20} />
                     <h6>{f.title}</h6>
                   </span>
@@ -120,8 +120,8 @@ const Plan_section = () => {
             <span className="plan__info bg-[#F9FAFB] flex-col space-y-8 p-3 px-12 rounded-xl justify-center items-center">
               {bussiness_feat.map((f) => {
                 return (
-                  <span className="flex space-x-2 ">
-                    <Image src={green_tick} alt="greentick" width={20} />
+                  <span key={f.id} className="flex space-x-2 ">
+                    <Image  src={green_tick} alt="greentick" width={20} />
                     <h6>{f.title}</h6>
                   </span>
                 );
